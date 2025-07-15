@@ -1,9 +1,10 @@
 <?php
 /**
- * Plugin Name: Mollie Donaties
+ * Plugin Name: Growskills Mollie Donaties
  * Description: Eenvoudige donatie plugin met Mollie iDEAL
- * Version: 1.0.2
- * Author: Henri Kok
+ * Version: 1.0.3
+ * Author: Growskills
+ * Author URI: https://growskills.nl
  */
 
 defined('ABSPATH') || exit;
