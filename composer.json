@@ -1,0 +1,12 @@
+{
+  "name": "henrikok/mollie-donaties",
+  "description": "Eenvoudige plugin voor eenmalige donaties via Mollie",
+  "require": {
+    "mollie/mollie-api-php": "^2.56"
+  },
+  "autoload": {
+    "psr-4": {
+      "MollieDonaties\\": "includes/"
+    }
+  }
+}

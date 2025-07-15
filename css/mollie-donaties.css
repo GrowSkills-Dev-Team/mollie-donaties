@@ -1,0 +1,352 @@
+/* Mollie Donaties Plugin Styling */
+
+.mollie-donations {
+  margin: 1.25rem 0;
+}
+
+.mollie-donations form {
+  margin: 0;
+}
+
+.mollie-donations p {
+  margin-bottom: 0.9375rem;
+}
+
+.mollie-donations label {
+  display: block;
+  margin-bottom: 0.3125rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Project selectie styling */
+.mollie-donations .project-select {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='m2 0-2 2h4zm0 5 2-2h-4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.75rem;
+  padding-right: 2.25rem;
+  appearance: none;
+}
+
+.mollie-donations input[type="text"],
+.mollie-donations input[type="email"],
+.mollie-donations input[type="number"],
+.mollie-donations select {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.mollie-donations input[type="text"]:focus,
+.mollie-donations input[type="email"]:focus,
+.mollie-donations input[type="number"]:focus,
+.mollie-donations select:focus {
+  outline: none;
+  border-color: #007cba;
+  box-shadow: 0 0 0 0.0625rem #007cba;
+}
+
+/* Bedrag opties */
+.amount-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  margin-top: 0.5rem;
+}
+
+.amount-options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0.5rem 0.9375rem;
+  background: #fff;
+  border: 0.125rem solid #ddd;
+  border-radius: 1.5625rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  min-width: 3.75rem;
+  justify-content: center;
+}
+
+.amount-options label:hover {
+  border-color: #007cba;
+  background: #f0f8ff;
+}
+
+.amount-options input[type="radio"] {
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.amount-options label.selected {
+  background: #007cba;
+  color: #fff;
+  border-color: #007cba;
+}
+
+/* Eigen bedrag veld */
+.custom-amount {
+  margin-top: 0.625rem;
+  padding: 0.9375rem;
+  background: #fff;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.25rem;
+  display: none;
+}
+
+.custom-amount label {
+  margin-bottom: 0.3125rem;
+}
+
+.custom-amount-help {
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.currency-input {
+  display: flex;
+  align-items: center;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.25rem;
+  background: #f8f9fa;
+  transition: border-color 0.3s ease;
+  padding-left: 0.75rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.currency-input:focus-within {
+  border-color: #007cba;
+  box-shadow: 0 0 0 0.0625rem #007cba;
+}
+
+.custom-amount input {
+  width: 100%;
+  border: none;
+  padding: 0.625rem 0.75rem 0.625rem 0.25rem;
+  font-size: 1rem;
+  background: #f8f9fa;
+  outline: none;
+}
+
+/* Submit knop */
+.mollie-donations button[type="submit"] {
+  background: #007cba;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.875rem;
+  border-radius: 1.5625rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.mollie-donations button[type="submit"]:hover {
+  background: #005a87;
+}
+
+.mollie-donations button[type="submit"]:active {
+  transform: translateY(0.0625rem);
+}
+
+/* Betaalstatus berichten */
+.mollie-payment-status {
+  padding: 0.9375rem 1.25rem;
+  margin: 1.25rem 0;
+  border-radius: 0.5rem;
+  border-left: 0.25rem solid;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.mollie-payment-status p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Success status */
+.mollie-success {
+  background: #d4edda;
+  color: #155724;
+  border-left-color: #28a745;
+}
+
+.mollie-success::before {
+  content: "✓ ";
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Error status */
+.mollie-error {
+  background: #f8d7da;
+  color: #721c24;
+  border-left-color: #dc3545;
+}
+
+.mollie-error::before {
+  content: "⚠ ";
+  font-weight: bold;
+  color: #dc3545;
+}
+
+/* Warning status */
+.mollie-warning {
+  background: #fff3cd;
+  color: #856404;
+  border-left-color: #ffc107;
+}
+
+.mollie-warning::before {
+  content: "⚡ ";
+  font-weight: bold;
+  color: #ffc107;
+}
+
+/* Info status */
+.mollie-info {
+  background: #d1ecf1;
+  color: #0c5460;
+  border-left-color: #17a2b8;
+}
+
+.mollie-info::before {
+  content: "ℹ ";
+  font-weight: bold;
+  color: #17a2b8;
+}
+
+/* Recurring donation styling */
+.recurring-option {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.recurring-option input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.1);
+}
+
+.recurring-info {
+  display: none;
+  color: #666;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.interval-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.interval-options label {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.9375rem;
+  background: #fff;
+  border: 0.125rem solid #ddd;
+  border-radius: 1.5625rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  min-width: 3.75rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.interval-options label:hover {
+  border-color: #007cba;
+  background: #f0f8ff;
+}
+
+.interval-options label input[type="radio"] {
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Selected state for interval options */
+.interval-options label.selected {
+  background: #007cba;
+  color: #fff;
+  border-color: #007cba;
+}
+
+/* Donation type section spacing */
+.mollie-donations p {
+  margin-bottom: 1.25rem;
+}
+
+.mollie-donations p > label {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 48rem) {
+  .mollie-donations {
+    margin: 0.9375rem 0;
+  }
+  
+  .amount-options {
+    flex-direction: column;
+  }
+  
+  .amount-options label {
+    justify-content: flex-start;
+    min-width: auto;
+  }
+  
+  .interval-options {
+    flex-direction: column;
+  }
+  
+  .interval-options label {
+    justify-content: flex-start;
+    min-width: auto;
+  }
+  
+  .mollie-payment-status {
+    padding: 0.75rem 0.9375rem;
+    margin: 0.9375rem 0;
+    font-size: 0.875rem;
+  }
+}
+
+/* Accessibility verbeteringen */
+.mollie-donations input:focus,
+.mollie-donations button:focus {
+  outline: 0.125rem solid #007cba;
+  outline-offset: 0.125rem;
+}
+
+/* Focus styling voor verborgen radio buttons via labels */
+.amount-options input[type="radio"]:focus + label,
+.interval-options input[type="radio"]:focus + label {
+  outline: 0.125rem solid #007cba;
+  outline-offset: 0.125rem;
+}
+
+/* Print styling */
+@media print {
+  .mollie-donations,
+  .mollie-payment-status {
+    break-inside: avoid;
+  }
+}
