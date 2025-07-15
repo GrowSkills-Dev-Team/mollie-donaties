@@ -10,9 +10,7 @@ class Mollie_Donaties {
     $charset = $wpdb->get_charset_collate();
 
     $sql = "CREATE TABLE $table (
-            switch ($donation->recurring_interval) {
-          case '1 day': $recurring_text = 'dagelijks'; break;
-          case '1 month': $recurring_text = 'maandelijks'; break;id INT AUTO_INCREMENT PRIMARY KEY,
+      id INT AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(255),
       email VARCHAR(255),
       amount DECIMAL(10,2),

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Growskills Mollie Donaties
  * Description: Eenvoudige donatie plugin met Mollie iDEAL
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Growskills
  * Author URI: https://growskills.nl
  */
