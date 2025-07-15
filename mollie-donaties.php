@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Mollie Donaties
  * Description: Eenvoudige donatie plugin met Mollie iDEAL
- * Version: 1.0
+ * Version: 1.0.2
  * Author: Henri Kok
  */
 
